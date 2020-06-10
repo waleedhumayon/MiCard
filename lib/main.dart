@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'FLUTTER DEVELOPER',
+                'YOUR TITLE',
                 style: TextStyle(
                   fontFamily: 'SourceSansPro',
                   fontSize: 20.0,
@@ -39,54 +39,45 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 )
               ),
-              Container(
-                color: Colors.white,
+              SizedBox(
+                  height: 20.0,
+                  width: 250.0,
+                  child: Divider(
+                    color: Colors.teal.shade50,
+                  )
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       color: Colors.teal.shade900,
                     ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      '+1 234 567 8910',
+                    title: Text(
+                      '+1 123 456 7890',
                       style: TextStyle(
-                        fontSize: 15.0,
-                        fontFamily: 'SourceSansPro',
+                        fontFamily: 'Comfortaa',
                         color: Colors.teal.shade900,
                       ),
-                    )
-                  ],
-                )
+                    ),
+                  )
               ),
-              Container(
-                color: Colors.white,
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                    'email@provider.com',
+                    style: TextStyle(
+                      fontFamily: 'Comfortaa',
                       color: Colors.teal.shade900,
                     ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      'email@provider.com',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontSize: 15.0,
-                        fontFamily: 'SourceSansPro',
-                      ),
-                    )
-                  ],
+                  ),
                 )
-              )
+              ),
             ],
           )
         ),
